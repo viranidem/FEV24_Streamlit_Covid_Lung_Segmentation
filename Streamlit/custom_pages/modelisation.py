@@ -4,7 +4,7 @@ import glob
 from PIL import Image
 import tensorflow as tf
 import numpy as np
-import cv2  # Assure-toi d'avoir installé OpenCV : pip install opencv-python
+import cv2  
 
 
 # Définir la fonction Grad-CAM
