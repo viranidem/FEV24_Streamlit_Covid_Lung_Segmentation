@@ -99,9 +99,9 @@ def main():
 
     # Fonction pour récupérer les chemins des images
     def paths_to_image(working_dir):
-        covid_image_path = os.path.join(working_dir, 'COVID', 'images')
-        normal_image_path = os.path.join(working_dir, 'Normal', 'images')
-        pneumonia_image_path = os.path.join(working_dir, 'Pneumonia', 'images')
+        covid_image_path = os.path.join(base_path, 'COVID')
+        normal_image_path = os.path.join(base_path, 'Normal')
+        pneumonia_image_path = os.path.join(base_path, 'Pneumonia')
 
         all_covid_image_paths = glob.glob(os.path.join(covid_image_path, '*.jpg')) + glob.glob(os.path.join(covid_image_path, '*.png'))
         all_normal_image_paths = glob.glob(os.path.join(normal_image_path, '*.jpg')) + glob.glob(os.path.join(normal_image_path, '*.png'))
@@ -114,7 +114,7 @@ def main():
     # Charger le modèle
     @st.cache_resource
     def load_model():
-        return tf.keras.models.load_model("/Users/anissa/Downloads/Lung_Segmentation_Data/model2bis_enc.keras")
+        return tf.keras.models.load_model("static/model2bis_enc.keras")
 
     model = load_model()
 
@@ -128,7 +128,7 @@ def main():
         return img_rgb
 
     # Spécifie le chemin de ton répertoire local
-    base_path = '/Users/anissa/Downloads/Lung_Segmentation_Data'
+    base_path = 'static/Data_lung_segmentation_Drive'
 
     # Charger les chemins des images
     all_image_paths, all_covid_image_paths, all_normal_image_paths, all_pneumonia_image_paths = paths_to_image(base_path)
