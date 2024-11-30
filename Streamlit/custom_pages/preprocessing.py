@@ -42,7 +42,7 @@ def main():
     col1, col2, col3 = st.columns([1, 2, 1])  # Centrer l'image en utilisant column width ratios
     with col2:
         st.image(
-            "/Users/anissa/Desktop/static/Laplacian variance_Table.png",
+            "static/Laplacian variance_Table.png",
             caption="Image sharpness and blurriness by category (without masks)",
             width=500,
     )
@@ -72,7 +72,7 @@ def main():
     col1, col2, col3 = st.columns([1, 2, 1])  # Centrer l'image en utilisant column width ratios
     with col2:
         st.image(
-            "/Users/anissa/Desktop/static/SOBEL variance.png",
+            "static/SOBEL variance.png",
             caption="Histograms of Sobel gradient by category (without masks)",
             width=500,
     )
@@ -95,7 +95,7 @@ def main():
     col1, col2, col3 = st.columns([1, 2, 1])  # Centrer l'image en utilisant column width ratios
     with col2:
         st.image(
-            "/Users/anissa/Desktop/static/HOG features.png",
+            "static/HOG features.png",
             caption="PCA of HOG features in 3D",
             width=450,
     )
