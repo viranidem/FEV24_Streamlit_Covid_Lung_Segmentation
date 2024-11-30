@@ -128,7 +128,7 @@ def main():
         return img_rgb
 
     # Spécifie le chemin de ton répertoire local
-    base_path = 'static/Data_lung_segmentation_Drive'
+    base_path = 'static/Lung_Segmentation_Data_Drive'
 
     # Charger les chemins des images
     all_image_paths, all_covid_image_paths, all_normal_image_paths, all_pneumonia_image_paths = paths_to_image(base_path)
