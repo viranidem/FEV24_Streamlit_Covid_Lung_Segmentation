@@ -6,7 +6,7 @@ def main():
 
     # Place the image in the middle column
     with col2:
-        image_path = "/Users/anissa/Desktop/static/Image_Demo_Streamlit.png"  
+        image_path = "static/Image_Demo_Streamlit.png"  
         try:
             st.image(image_path, use_container_width=False, width=650)  # Set image size
         except FileNotFoundError:
