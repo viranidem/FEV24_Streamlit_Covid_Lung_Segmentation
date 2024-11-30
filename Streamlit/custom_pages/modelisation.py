@@ -241,5 +241,11 @@ def main():
         """,
         unsafe_allow_html=True
 )
-    
+    # Phrase explicative pour motif de non inclusion du dataset
+    st.markdown(
+    """
+    **Note:** Due to deployment constraints and the need for fast performance, we opted to use a random selection of approximately 500 images from each category for this demonstration. The complete dataset, which contains more than 33,000 images, could not be included.
+    """,
+    unsafe_allow_html=True
+)
     
