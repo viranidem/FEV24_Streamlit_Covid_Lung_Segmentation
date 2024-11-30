@@ -72,7 +72,7 @@ def main():
     col1, col2, col3 = st.columns([1, 2, 1])  # Centrer l'image en utilisant column width ratios
     with col2:
         st.image(
-            "static/SOBEL variance.png",
+            "static/SOBEL Variance.png",
             caption="Histograms of Sobel gradient by category (without masks)",
             width=500,
     )
