@@ -57,7 +57,7 @@ def main():
     col1, col2, col3 = st.columns([1, 2, 1])  # Center image using column width ratios
     with col2:
         st.image(
-            "/Users/anissa/Desktop/static/Number of images per category.png",
+            "static/Number of images per category.png",
             caption="Number of images per category",
             width=500,
         )
@@ -66,7 +66,7 @@ def main():
     col1, col2, col3 = st.columns([1, 2, 1])  # Centrer l'image en utilisant column width ratios
     with col2:
         st.image(
-            "/Users/anissa/Desktop/static/Percentage of images per category.png",
+            "static/Percentage of images per category.png",
             caption="Percentage of images per category",
             width=500,
         )
@@ -87,28 +87,28 @@ def main():
     st.markdown("#### Normal")
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.image("/Users/anissa/Desktop/static/Normal_Image only.png", caption="Image Only", width=300)
+        st.image("static/Normal_Image only.png", caption="Image Only", width=300)
     with col2:
-        st.image("/Users/anissa/Desktop/static/Normal_Mask only.png", caption="Mask Only", width=300)
+        st.image("static/Normal_Mask only.png", caption="Mask Only", width=300)
     with col3:
-        st.image("/Users/anissa/Desktop/static/Normal_Masked image.png", caption="Masked Image", width=300)
+        st.image("static/Normal_Masked image.png", caption="Masked Image", width=300)
 
     # Ligne 2: COVID-19
     st.markdown("#### COVID")
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.image("/Users/anissa/Desktop/static/COVID_Image only.png", caption="Image Only", width=300)
+        st.image("static/COVID_Image only.png", caption="Image Only", width=300)
     with col2:
-        st.image("/Users/anissa/Desktop/static/COVID_Mask only.png", caption="Mask Only", width=300)
+        st.image("static/COVID_Mask only.png", caption="Mask Only", width=300)
     with col3:
-        st.image("/Users/anissa/Desktop/static/COVID_Masked image.png", caption="Masked Image", width=300)
+        st.image("static/COVID_Masked image.png", caption="Masked Image", width=300)
 
     # Ligne 3: Pneumonia
     st.markdown("#### Pneumonia")
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.image("/Users/anissa/Desktop/static/Pneumonia_Image only.png", caption="Image Only", width=300)
+        st.image("static/Pneumonia_Image only.png", caption="Image Only", width=300)
     with col2:
-        st.image("/Users/anissa/Desktop/static/Pneumonia_Mask only.png", caption="Mask Only", width=300)
+        st.image("static/Pneumonia_Mask only.png", caption="Mask Only", width=300)
     with col3:
-        st.image("/Users/anissa/Desktop/static/Pneumonia_Masked image.png", caption="Masked Image", width=300)
+        st.image("static/Pneumonia_Masked image.png", caption="Masked Image", width=300)
